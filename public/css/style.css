@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+}
+
+/*clear float after element*/
+.clear-fix {
+    zoom: 1;
+}
+.clear-fix::after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+section {
+    padding-top: 15px;
+}
+
+.navbar {
+    background-color:#563d7c;
+}
+
+.carousel-inner h5 {
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.carousel-inner p {
+    font-size: 130%;
+    margin-bottom: 90px;
+}
+
+.logo-image-btl {
+    color: white;
+    font-size: 250%;
+}
+
+#carouselExampleIndicators {
+    padding-top: 30px;
+}
+
+.page-navi-panel-btl {
+    background-color: rgb(236, 236, 236);
+}
+
+.page-navi-panel-btl ul {
+    padding-left: 0px;
+    padding-bottom: 15px;
+    list-style: none;
+    margin-bottom: 0px;
+}
+
+.page-navi-panel-btl li {
+    font-size: 110%;
+    display: inline-block;
+    color: #424242;
+    padding: 0 3px;
+}
+
+.chevron-forward {
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+a {
+    color:rgb(83, 83, 83);
+}
+
+h1 {
+    color: #563d7c;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+.guitar-catagories-btl ul {
+    list-style: none;
+    padding: 0;
+}
+
+.guitar-catagories-btl li {
+    display: inline-block;
+    width: 16%;
+    padding: 5px 5px !important;
+}
+
+.dropdown-categories a {
+    width: 100%;
+    font-size: 90%;
+}
+
+.left-filter-btl {
+    float: left;
+}
+
+.right-filter-btl {
+    float: right;
+}
+
+.filter-btl .clear-fix {
+    background-color: #ffc107;
+    border-radius: 4px;
+}
+
+.section-product .card {
+    width: 100% !important;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px #b9b9b9;
+    transition: box-shadow 0.5s;
+}
+
+.section-product .card:hover {
+    box-shadow: 10px 5px 5px #b9b9b9;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section-product .product-btl {
+    margin: 13px 0px ;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.page-link {
+    color: #563d7c;
+}
+
+.page-item.active .page-link {
+    background-color: #563d7c;
+    border-color: #563d7c;
+}
+
+.infor-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.596), rgba(0, 0, 0, 0.596)),
+    url(./../image/infor-bg.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 110%;
+    background-attachment: fixed;
+}
+
+.infor {
+    padding: 30px 0px;
+}
+
+.infor h2 {
+    font-size: 150%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.infor p {
+    padding: 0 10px;
+}
+
+.section-letter {
+    background-color: rgb(236, 236, 236);
+}
+
+.section-letter .container {
+    font-size: 110%;
+    padding: 40px 40px;
+}
+
+.section-letter .btn-lg {
+    font-size: 1rem;
+}
+
+.section-letter h2 {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.letter-left {
+    padding: 15px 15px;
+
+}
+
+.letter-right {
+    padding: 15px 15px;
+}
+
+/* footer */
+
+footer {
+    background-color: #353535;
+    font-size: 110%;
+    padding: 30px;
+}
+  
+.footer-nav {
+    list-style: none;
+}
+  
+.social-links {
+    list-style: none;
+    float: right;
+}
+  
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+.social-links li:last-of-type {
+    margin-right: 0px;
+}
+  
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    color: #969696;
+    text-decoration: none;
+    border: 0;
+}
+  
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #f1f1f1;
+}
+  
+footer .footer-infor {
+    color: #969696;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.logo-facebook {
+    color: #969696;
+    transition: color 0.5s;
+}
+  
+.logo-facebook:hover {
+    color: #1877f2;
+}
+  
+.logo-twitter {
+    color: #969696;
+    transition: color 0.5s;
+}
+  
+.logo-twitter:hover {
+    color: #1da1f2;
+}
+  
+.logo-twitch {
+    color: #969696;
+    transition: color 0.5s;
+}
+  
+.logo-twitch:hover {
+    color: #9146ff;
+}
+  
+.logo-instagram {
+    color: #969696;
+    transition: color 0.5s;
+}
+  
+.logo-instagram:hover {
+    color: #c32aa3;
+}
