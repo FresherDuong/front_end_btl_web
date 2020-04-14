@@ -342,6 +342,16 @@ footer .footer-infor {
     font-weight: bold;
 }
 
+.location {
+    color: #00acea;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.card-location {
+    margin-top: 15px;
+}
+
 .card-body img {
     width: 16px;
     height: auto;
