@@ -548,3 +548,60 @@ footer .footer-infor {
 .dashboard-container:hover {
     box-shadow: 10px 5px 5px #b9b9b9;
 }
+
+/* CART */
+
+.table-cart {
+    background-color: white;
+    border: 1px solid #b9b9b9;
+    box-shadow: 0px 5px 5px #b9b9b9;
+    transition: box-shadow 0.5s;
+    margin: 30px 0px;
+}
+
+.table-cart:hover {
+    box-shadow: 6px 5px 5px #b9b9b9;
+}
+
+.table-cart tbody tr {
+    height: 150px;
+}
+
+.table-cart tbody img {
+    height: 140px;
+    width: auto;
+}
+
+#total-price {
+    color: rgb(233, 30, 99);
+}
+
+.total-price-container {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* ORDER */
+
+.form-order-detal {
+    margin: 30px 0px;
+    padding: 20px 20px;
+    border-radius: 8px;
+    border: 1px solid #b9b9b9;
+    box-shadow: 0px 5px 5px #b9b9b9;
+    transition: box-shadow 0.5s;
+}
+
+.form-order-detal:hover {
+    box-shadow: 6px 5px 5px #b9b9b9;
+
+}
+
+.form-order-detal .left-form {
+    padding: 20px 20px;
+}
+
+.form-order-detal .right-form {
+    padding: 20px 20px; 
+}
