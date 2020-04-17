@@ -605,3 +605,34 @@ footer .footer-infor {
 .form-order-detal .right-form {
     padding: 20px 20px; 
 }
+
+form label {
+    font-weight: bold;
+}
+
+/* PREVIEW IMAGE */
+.form-control, .thumbnail {
+    border-radius: 2px;
+}
+
+/* File Upload */
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+}
+.fileUpload #logo-id {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 33px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.img-preview {
+    width: 100px;
+    height: auto;
+    margin-top: 15px;
+}

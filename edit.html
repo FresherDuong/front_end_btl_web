@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&amp;amp;subset=latin-ext,vietnamese">
+    <script src="./public/ckeditor/ckeditor.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="./public/image/logo.png">
+
+    <title>Guitar-H2D | Dashboard</title>
+</head>
+<body>
+
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <a class="navbar-brand sidebar-heading" href="./index.html"><ion-icon class="logo-image-btl" name="musical-notes-outline"></ion-icon> Guitar-H2D</a>
+            <div class="list-group list-group-flush">
+                <button type="button" class="list-group-item list-group-item-action">Tổng quan</button>
+                <button type="button" class="list-group-item list-group-item-action active">Sản phẩm</button>
+                <button type="button" class="list-group-item list-group-item-action">Đơn đặt hàng</button>
+            </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <div id="page-content-wrapper">
+            <nav class="navbar navbar-expand-lg navbar-dark border-bottom">
+                <button class="btn btn-outline-warning" id="menu-toggle">Bật/tắt menu</button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Chào Dương Đình <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="dashboard-container">
+                <!-- Page Content -->
+                <form action="#" method="POST">
+
+                  <h1>THÔNG TIN SẢN PHẨM</h1>
+                  <hr>
+                  <div class="form-group mb-2">
+                    <label for="product-name">Tên sản phẩm</label>
+                    <input class="form-control" type="text" maxlength="100" name="product-name" value="">
+
+                    <label for="product-id">Mã sản phẩm</label>
+                    <input class="form-control" type="email" value="" maxlength="100" name="product-id">
+      
+                    <label for="product-price">Giá</label>
+                    <input class="form-control" type="text" maxlength="200" name="product-price" value="">
+
+                    <div class="main-img-preview">
+                      <img class="thumbnail img-preview" src="./public/image/product-1.jpg" title="Preview Logo">
+                    </div>
+                    <div class="input-group">
+                      <input id="fakeUploadLogo" class="form-control" placeholder="Choose File" disabled="disabled">
+                      <div class="input-group-btn">
+                        <div class="fileUpload btn btn-secondary fake-shadow">
+                          <span><i class="glyphicon glyphicon-upload"></i>Tải ảnh lên</span>
+                          <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                        </div>
+                      </div>
+                    </div>
+                    <p style="font-weight: bold;">Tải ảnh sản phẩm hiển thị trên trang chủ</p>
+
+                    <label for="product-video">Link video sản phẩm</label>
+                    <input class="form-control" type="tel" maxlength="13" name="product-video" value="">
+
+                    <label for="description">Mô tả sản phẩm</label>
+                    <textarea class="ckeditor" name="description"></textarea>
+
+                    <label for="product-specs">Thông số kĩ thuật</label>
+                    <textarea class="ckeditor" name="product-specs"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary mb-2">THÊM MỚI</button>
+                </form>
+                <!-- End page content -->
+            </div>
+        </div>
+    </div>
+</div>>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+      <div class="row">
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <ul class="footer-nav">
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">iOS App</a></li>
+          <li><a href="#">Android App</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+        <ul class="social-links">
+          <li>
+            <a href="#"
+              ><ion-icon name="logo-facebook" class="logo-facebook"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="logo-twitter" class="logo-twitter"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon name="logo-twitch" class="logo-twitch"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><ion-icon
+                name="logo-instagram"
+                class="logo-instagram"
+              ></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="footer-infor">
+      <p>
+        Copyright &copy; 2020 by Du Dinh Duong & La Dac Hieu & Le Duc Huy. All rights reserved.
+      </p>
+      <p>
+        www.guitarh2d.com.vn
+      </p>
+    </div>
+  </div>
+</footer>
+<!--End Footer -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./public/js/bootstrap.bundle.min.js"></script>
+<script src="./public/js/javascript.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
