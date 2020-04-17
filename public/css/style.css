@@ -520,10 +520,6 @@ footer .footer-infor {
     }
 }
 
-#sidebar-wrapper a {
-    color: #563d7c;
-}
-
 #sidebar-wrapper ion-icon {
     color: #563d7c;
 }
@@ -635,4 +631,26 @@ form label {
     width: 100px;
     height: auto;
     margin-top: 15px;
+}
+
+/* ADMIN ORDER DETAIL */
+
+.table-admin-cart {
+    background-color: white;
+    border: 1px solid #b9b9b9;
+    margin: 15px 0px;
+}
+
+.table-admin-cart tbody tr {
+    height: 150px;
+}
+
+.table-admin-cart tbody img {
+    height: 140px;
+    width: auto;
+}
+
+h5 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
