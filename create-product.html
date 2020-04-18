@@ -18,10 +18,10 @@
         <div class="bg-light border-right" id="sidebar-wrapper">
             <a class="navbar-brand sidebar-heading" href="./index.html"><ion-icon class="logo-image-btl" name="musical-notes-outline"></ion-icon> Guitar-H2D</a>
             <div class="list-group list-group-flush">
-                <a href="./dashboard.html" class="list-group-item list-group-item-action">Tổng quan</a>
-                <a href="./total-product.html" class="list-group-item list-group-item-action active">Sản phẩm</a>
-                <a href="./total-order.html" class="list-group-item list-group-item-action">Đơn đặt hàng</a>
-                <a href="./create-product.html" class="list-group-item list-group-item-action">Thêm sản phẩm</a>
+              <a href="./dashboard.html" class="list-group-item list-group-item-action">Tổng quan</a>
+              <a href="./total-product.html" class="list-group-item list-group-item-action">Sản phẩm</a>
+              <a href="./total-order.html" class="list-group-item list-group-item-action">Đơn đặt hàng</a>
+              <a href="./create-product.html" class="list-group-item list-group-item-action active">Thêm sản phẩm</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
@@ -49,52 +49,45 @@
             <div class="container-fluid">
                 <div class="dashboard-container">
                 <!-- Page Content -->
-                <form style="margin-bottom: 15px;" class="form-inline">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
-                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Tìm kiếm</button>
-                </form>
+                <form action="#" method="POST">
 
-                <div class="table-responsive-md">
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th scope="col">MÃ</th>
-                            <th scope="col">TÊN SẢN PHẨM</th>
-                            <th scope="col">GIÁ BÁN</th>
-                            <th scope="col">SỐ LƯỢNG</th>
-                            <th scope="col">THƯƠNG HIỆU</th>
-                            <th scope="col">LOẠI</th>
-                            <th scope="col">CÔNG CỤ</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>KEO-502</td>
-                            <td>GREG BENNETT GD-100SCE</span></td>
-                            <td>10.710.000 VNĐ</td>
-                            <td>360</td>
-                            <td>FENDER</td>
-                            <td>CLASSIC</td>
-                            <td style="text-align: center; font-size: 130%;">
-                                <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
-                                <a href="./edit-product.html"><ion-icon name="create-outline"></ion-icon></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>KEO-502</td>
-                            <td>GREG BENNETT GD-100SCE</span></td>
-                            <td>10.710.000 VNĐ</td>
-                            <td>360</td>
-                            <td>FENDER</td>
-                            <td>CLASSIC</td>
-                            <td style="text-align: center; font-size: 130%;">
-                                <a href="#"><ion-icon name="trash-outline"></ion-icon></a>
-                                <a href="./edit-product.html"><ion-icon name="create-outline"></ion-icon></a>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+                  <h1>THÔNG TIN SẢN PHẨM</h1>
+                  <hr>
+                  <div class="form-group mb-2">
+                    <label for="product-name">Tên sản phẩm</label>
+                    <input class="form-control" type="text" maxlength="100" name="product-name" value="">
+
+                    <label for="product-id">Mã sản phẩm</label>
+                    <input class="form-control" type="email" value="" maxlength="100" name="product-id">
+      
+                    <label for="product-price">Giá</label>
+                    <input class="form-control" type="text" maxlength="200" name="product-price" value="">
+
+                    <div class="main-img-preview">
+                      <img class="thumbnail img-preview" src="./public/image/product-1.jpg" title="Preview Logo">
+                    </div>
+                    <div class="input-group">
+                      <input id="fakeUploadLogo" class="form-control" placeholder="Choose File" disabled="disabled">
+                      <div class="input-group-btn">
+                        <div class="fileUpload btn btn-secondary fake-shadow">
+                          <span><i class="glyphicon glyphicon-upload"></i>Tải ảnh lên</span>
+                          <input id="logo-id" name="logo" type="file" class="attachment_upload">
+                        </div>
+                      </div>
+                    </div>
+                    <p style="font-weight: bold;">Tải ảnh sản phẩm hiển thị trên trang chủ</p>
+
+                    <label for="product-video">Link video sản phẩm</label>
+                    <input class="form-control" type="tel" maxlength="13" name="product-video" value="">
+
+                    <label for="description">Mô tả sản phẩm</label>
+                    <textarea class="ckeditor" name="description"></textarea>
+
+                    <label for="product-specs">Thông số kĩ thuật</label>
+                    <textarea class="ckeditor" name="product-specs"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-secondary mb-2">THÊM SẢN PHẨM</button>
+                </form>
                 <!-- End page content -->
             </div>
         </div>
